@@ -1,0 +1,209 @@
+:root {
+  --primary-dark: #0f172a;
+  --primary-accent: #1e3a8a;
+  --primary-accent-hover: #162d6b;
+  --light-bg: #f8fafc;
+  --text-muted: #64748b;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+section {
+  overflow: hidden;
+}
+
+.section-heading {
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+/* NAVBAR */
+.navbar {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.brand-text {
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #334155 !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-accent) !important;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+    url("./assets/bobbyPins.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+/* PRODUCTS SECTION */
+.size-card {
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.size-card h5 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+
+.size-card p {
+  color: var(--text-muted);
+}
+
+.size-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* WHY CHOOSE US */
+.why-card {
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.why-card h5 {
+  color: var(--primary-dark);
+}
+
+.why-card p {
+  color: var(--text-muted);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* CTA SECTION */
+.cta-section {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.cta-section h3 {
+  font-weight: 600;
+}
+
+.cta-section p {
+  color: #cbd5e1;
+}
+
+/* CONTACT FORM */
+form input,
+form textarea {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 0.15rem rgba(30, 58, 138, 0.2);
+}
+
+button.btn-primary {
+  background-color: var(--primary-accent) !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 500;
+}
+
+button.btn-primary:hover {
+  background-color: var(--primary-accent-hover) !important;
+}
+
+/* FOOTER */
+.footer-section {
+  background-color: var(--primary-dark);
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* BADGES */
+.badge {
+  font-weight: 500;
+  padding: 6px 10px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    min-height: 75vh;
+    padding: 60px 20px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
