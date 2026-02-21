@@ -51,7 +51,7 @@ function App() {
       <section className="hero-section d-flex align-items-center text-center">
         <div className="container py-5">
           <h1 className="fw-bold hero-title">
-            Premium Hair Clips & Pins Manufacturer
+            Premium Hair Clips & Pin Manufacturer
           </h1>
           <p className="hero-subtitle mt-3">
             Bulk Orders • Custom Designs • High Quality Materials
