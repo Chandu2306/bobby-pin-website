@@ -67,7 +67,7 @@ function App() {
       </section>
 
       {/* PRODUCTS */}
-      <section className="py-5">
+      <section className="py-5" id="products">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold">Our Bobby Pin Sizes</h2>
@@ -122,7 +122,7 @@ function App() {
       </section>
 
       {/* MANUFACTURING */}
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light" id="manufacturing">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold">Why Partner With Us</h2>
